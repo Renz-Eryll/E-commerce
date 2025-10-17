@@ -1,0 +1,13 @@
+import express from "express";
+import { PORT } from "./config/env.js";
+
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the MERN Ecommerce");
+});
+
+app.listen(PORT, async () => {
+  console.log(`MERN Ecommerce API is running on the http://localhost:${PORT}`);
+});
+export default app;
