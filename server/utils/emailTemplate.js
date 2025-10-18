@@ -35,7 +35,7 @@ export const verificationEmailTemplate = (name, verificationToken) => {
           <p>If you didn't create an account, please ignore this email.</p>
         </div>
         <div class="footer">
-          <p>© 2024 Vans Shoe Store. All rights reserved.</p>
+          <p>© 2025 E-commerce Shoe Store. All rights reserved.</p>
           <p>This is an automated email, please do not reply.</p>
         </div>
       </div>
