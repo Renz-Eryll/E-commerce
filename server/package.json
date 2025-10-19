@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "seed:products": "node seeders/products.seeder.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
