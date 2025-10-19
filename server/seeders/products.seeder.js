@@ -188,22 +188,20 @@ const sampleProducts = [
 const seedProducts = async () => {
   try {
     await mongoose.connect(DB_URI);
-    console.log("✅ Connected to database");
+    console.log("Connected to database");
 
-    // Drop the entire collection (including indexes)
     await mongoose.connection.db.dropCollection("products").catch(() => {
-      console.log("⚠️  Collection doesn't exist yet");
+      console.log("Collection doesn't exist yet");
     });
-    console.log("🗑️  Dropped products collection");
+    console.log("Dropped products collection");
 
-    // Insert sample products
     await Product.insertMany(sampleProducts);
-    console.log("✅ Sample products inserted successfully");
-    console.log(`📦 Total products: ${sampleProducts.length}`);
+    console.log("Sample products inserted successfully");
+    console.log(`Total products: ${sampleProducts.length}`);
 
     process.exit(0);
   } catch (error) {
-    console.error("❌ Error seeding products:", error);
+    console.error("Error seeding products:", error);
     process.exit(1);
   }
 };
