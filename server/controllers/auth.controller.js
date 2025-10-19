@@ -59,7 +59,7 @@ export const signUp = async (req, res, next) => {
     // Send verification email
     await sendEmail({
       to: email,
-      subject: "Verify Your Email - Vans Shoe Store",
+      subject: "Verify Your Email - E-commerce Shoe Store",
       html: verificationEmailTemplate(name, verificationToken),
     });
 
@@ -117,7 +117,7 @@ export const verifyEmail = async (req, res, next) => {
     // Send welcome email
     await sendEmail({
       to: user.email,
-      subject: "Welcome to Vans Shoe Store! 🎉",
+      subject: "Welcome to Ecommerce Shoe Store! 🎉",
       html: welcomeEmailTemplate(user.name),
     });
 
@@ -227,7 +227,7 @@ export const resendVerification = async (req, res, next) => {
     // Send verification email
     await sendEmail({
       to: email,
-      subject: "Verify Your Email - Vans Shoe Store",
+      subject: "Verify Your Email - Ecommerce Shoe Store",
       html: verificationEmailTemplate(user.name, verificationToken),
     });
 

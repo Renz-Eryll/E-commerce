@@ -9,7 +9,7 @@ function App() {
       </h1>
 
       <div className="p-8">
-        <h1 className="text-3xl font-bold mb-4">Vans Shoe Store</h1>
+        <h1 className="text-3xl font-bold mb-4">E-commerce Shoe Store</h1>
 
         {/* Different variants */}
         <div className="flex gap-4">
